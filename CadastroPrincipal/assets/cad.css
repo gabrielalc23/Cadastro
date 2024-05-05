@@ -1,0 +1,81 @@
+input:hover{
+    cursor: url('../img/cursor.cur'), auto;
+    caret-color: darkgoldenrod;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 150px;
+    width: 700px;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+    padding: 20px;
+    border-radius: 2%;
+    background-color: #0a4b3c;
+}
+
+input:focus {
+    border-color: white;
+    border: 1px solid red;
+}
+
+body {
+    background-color: #021813;
+    color: wheat;
+}
+h6 {
+    margin-top: 15px;
+}
+
+.container {
+    width: 900px;
+}
+
+.send {
+    margin-top: 20px;
+    appearance: none;
+    background-color: #247360;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(211, 123, 8, 0.4) 0 2px 4px, 
+                rgba(228, 122, 60, 0.815) 0 7px 13px -3px,
+                rgb(223, 146, 5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: wheat;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.send:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.send:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, 
+                rgba(45, 35, 66, 0.3) 0 7px 13px -3px, yellow 0 -3px 0 inset;
+    transform: translateY(-2px);
+    cursor: url('GTA\ 5\ Web\ Cursor.cur'), auto;
+}
+
+.send:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}

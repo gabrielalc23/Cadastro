@@ -1,0 +1,15 @@
+<!-- Conexão padrão com banco: -->
+    <?php
+    $dbName = "cadastro";
+    $host   = "localhost";
+    $user   = "root";
+    $pass   =  "";
+
+    $sql = new mysqli($host, $user, $pass, $dbName);
+    if ($sql->connect_errno) {
+        echo "falha ao conectar:(" . $sql->connect_errno .")". $sql->connect_errno;
+    }
+    else{
+        echo "Conectado!";
+    }
+    ?>
